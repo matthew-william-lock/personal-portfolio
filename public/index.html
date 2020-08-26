@@ -31,7 +31,7 @@
               <a class="nav-item nav-link scrollSmooth scroll active" href="#banner">Home</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#about">About</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#projects">Projects</a>
-              <a class="nav-item nav-link scrollSmooth scroll" href="#section1">Curriculum Vitae</a>
+              <a class="nav-item nav-link scrollSmooth scroll" href="#cv">Curriculum Vitae</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#section2">Contact Me</a>
             </div>
           </div>
@@ -41,7 +41,7 @@
 
     <!-- Personal Banner Starts -->
     <div id="banner" id="banner">
-        <div class="jumbotron jumbotron-fluid shadow-dark">
+        <div class="jumbotron jumbotron-fluid shadow-dark jumbotron-header">
             <div class="container ">    
                 
                 <div class="banner-content">
@@ -74,7 +74,7 @@
     
                     <div class="row mw-100">
                         <div class="col-md-6 bg-dark">
-                            <p class="lead text-light">I am a fourth year Electrical and Computer Engineering student at the University of Cape Town . Despite my passion for all things things related to coding and embedded systems , I make sure to never miss a leg day .</p>
+                            <p class="lead text-light">I am a fourth year Electrical and Computer Engineering student at the University of Cape Town . Despite my passion for all things related to coding and embedded systems , I make sure to never miss a leg day .</p>
                         </div>                    
                     </div>
 
@@ -141,7 +141,7 @@
                     <br>
 
                     <p>Through my time in engineering I have developed a sense of responsibility to apply my skills in an <b>African context</b>. 
-                    I have heeded the oppertunity to take part in projects lead by <b>Engineers Without Borders</b> such as the <a href="https://www.instagram.com/p/B3ALg94Hlw2/">Mama Africa</a>  
+                    I have heeded the opportunity to take part in projects lead by <b>Engineers Without Borders</b> such as the <a href="https://www.instagram.com/p/B3ALg94Hlw2/">Mama Africa</a>  
                     and <a href="https://www.instagram.com/p/B1TJPL4Hu8J/">Playing with Solar </a> projects, and have been involved in the development of
                     <a href="https://play.google.com/store/apps/details?id=com.pixilate&hl=en_us ">Pixilate</a>, an application focused on using Computer Vision to provide 
                     translations from English textbooks to African languages. I am currently involved with the development of an application which aims to strenghen the second hand
@@ -171,7 +171,7 @@
 
                 <!-- Exploring -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card">
+                    <div class="card card-hover">
                         <img class="card-img-top img-fluid" src="imgs/exploring.jpg">
                         <div class="card-body ">
                             <h3 class="card-title"><a href="#" class="stretched-link link text-dark">Exploring</a></h3>      
@@ -182,7 +182,7 @@
 
                 <!-- Bouldering -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card">
+                    <div class="card card-hover">
                         <img class="card-img-top img-fluid " src="imgs/climbing-front.jpg">
                         <div class="card-body">
                             <h3 class="card-title"><a href="#" class="stretched-link text-dark">Bouldering</a></h3>      
@@ -193,7 +193,7 @@
 
                 <!-- Gym -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card">
+                    <div class="card card-hover">
                         <video class="card-img-top bg-dark" autoplay loop muted>
                             <source src="vids/gym-cropped-3.mp4" type="video/mp4">
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
@@ -208,7 +208,7 @@
 
                 <!-- Bouldering -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card">
+                    <div class="card card-hover">
                         <img class="card-img-top img-fluid " src="imgs/gate-opener.jpg">
                         <div class="card-body">
                             <h3 class="card-title"><a href="#" class="stretched-link text-dark">Electronics</a></h3>      
@@ -227,7 +227,7 @@
     <!-- About Section End -->
 
     <!-- Project Section Start -->
-    <div class="container-fluid bg-dark projects-container shadow-dark">
+    <div class="container-fluid projects-container shadow-dark">
 
         <!-- background video -->
         <video autoplay muted loop id="myVideo">
@@ -237,67 +237,150 @@
         <div id="projects" class="container section pt-3">
 
             <!-- Header -->
-            <div class="row mw-100 justify-content-center justify-content-md-start ">
+            <div class="row mw-100 justify-content-center justify-content-md-start pt-3">
                 <div class="col-auto bg-dark shadow-dark">
                     <h1 class="h1 primary-color">My Projects</h1>
                 </div>                   
+            </div> 
+            
+            <!-- Weather Forecast API -->
+            <div class="card stretched mt-4">
+                <h5 class="card-header">Weather Forecast Web API</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
-    
-            <!-- content -->
-            <div class="row mw-100 mt-3 align-items-center justify-content-center pt-3 pb-4" > 
-    
-                <!-- justify-content-center -->
-                <div class="col-12 col-lg-3 col-md-5 d-flex justify-content-center justify-content-md-start">
-                    <img src="imgs/relaxing-small.jpg" class="rounded-circle shadow-dark" alt="Cinque Terre" width="200" height="200"> 
+
+            <!-- Realtime Chat Room -->
+            <div class="card stretched mt-4">
+                <h5 class="card-header">Realtime Chat Room</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-    
-                <div class="col-12 col-lg-9 col-md-7">
-                    <div class="speech-bubble-md background-white shadow-dark sharp-corners p-3 justify-content-center "> 
-                        <p>My name is <b>Matthew Lock</b> and I am a final year Electrical and Computer Engineering <b>student</b> from Cape Town.</p>      
-                        <p>Being a curious kid I loved exploring the mysteries of Ancient Egypt and learning all I could about those burning balls of gas in the sky. 
-                            Curioisity drove my passion for building things with my hands and using python programming to solve simple challenges.
-                            This ultimately lead me down my path to <b>Engineering</b> of which I am currently in hot pursuit 🔥 </p>  
-                    </div> 
+            </div>
+
+            
+            <!-- 2D Sonar Imaging System -->
+            <div class="card stretched mt-4">
+                <h5 class="card-header">2D Sonar Imaging System</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-    
-            </div>           
+            </div>
+
+            <!-- Unsupervised Image Cluster -->
+            <div class="card stretched mt-4">
+                <h5 class="card-header">Unsupervised Image Cluster</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
     
         </div>
     </div>
     <!-- Project Section End -->
 
+<!-- Project Section Start -->
+<div class="container-fluid projects-container ">
 
-    <div id="section1" class="container">
-        <h1>Section 1</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
+    <div id="cv" class="container section pt-3">
 
-    <div id = "section2" class="container">
+        <!-- Header -->
+        <div class="row mw-100 justify-content-center justify-content-md-start pt-3">
+            <div class="col-auto bg-dark shadow-dark">
+                <h1 class="h1 primary-color">Curriculum Vitae</h1>
+            </div>                   
+        </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, arcu in consectetur pretium, massa urna ultrices purus, et feugiat felis massa at lacus. Nunc posuere lacus quis nulla egestas dignissim. Pellentesque fermentum diam nec turpis rutrum, et bibendum libero scelerisque. Suspendisse blandit lorem vitae diam porta, vel cursus velit pretium. Ut sed ornare ante. Cras a lorem ut ipsum cursus ultrices eget a massa. Pellentesque lacinia orci imperdiet semper vestibulum. Nunc condimentum feugiat venenatis. Nulla ante sapien, gravida eget dolor ac, ullamcorper ultrices ex. Vestibulum consectetur ac diam sit amet ornare. Nunc quis pharetra elit. Curabitur auctor tristique risus at interdum. Praesent non condimentum mauris. Nam consectetur iaculis facilisis. Donec dapibus egestas enim, quis congue lectus maximus vel. Proin mattis, erat efficitur lacinia pulvinar, mi velit tempor lorem, vitae mollis turpis velit eget ex.
+        <!-- Content -->
+        <div class="mt-3 pt-3 pb-4 "> 
 
-            Duis tempor, massa vel aliquet maximus, purus magna finibus metus, vitae egestas dolor nisi eget elit. Etiam et blandit lectus. In id placerat sapien, id dignissim nisi. Integer pharetra aliquet ipsum, sed consectetur felis pharetra eu. Quisque ultricies ipsum justo, non pulvinar mauris facilisis et. Curabitur nulla diam, tincidunt nec lobortis sed, feugiat eget velit. Ut molestie orci quis laoreet suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum urna nibh. Sed sapien ex, pretium non ligula et, mattis sollicitudin enim. Fusce elementum, velit malesuada dapibus aliquet, ligula leo suscipit quam, eu aliquet justo lacus a nunc. Sed lacinia bibendum sapien eu aliquet. Praesent finibus diam in porttitor mattis. In vitae ornare odio. Aliquam vehicula dictum lectus eget rutrum. Sed enim leo, tempus a libero a, commodo venenatis nibh.
-            
-            Morbi vel risus et felis volutpat ultricies eu laoreet erat. Pellentesque rutrum at nibh in blandit. In vitae erat ac purus porta rhoncus eget sed mauris. Nunc convallis urna nec vestibulum pharetra. Pellentesque a velit tellus. Morbi faucibus lobortis tellus. Suspendisse potenti. Nunc auctor mattis magna nec sagittis. Quisque a lorem lacus. Morbi eget lectus hendrerit, molestie urna eu, lobortis nunc. Vestibulum ornare consequat purus id semper. Nam nec quam eu libero sagittis gravida.
-            
-            Praesent quis venenatis tellus. Nunc ornare scelerisque sem condimentum dapibus. In elementum, ante non facilisis varius, lorem diam posuere est, at ultricies metus sapien ut risus. Curabitur blandit at quam ac tempor. Pellentesque posuere sapien et nunc pretium pretium. Donec ultricies euismod blandit. Cras consectetur erat sit amet vestibulum hendrerit. Suspendisse potenti. Nullam quis lacus finibus, feugiat nulla rutrum, euismod est. Nam volutpat eu leo tincidunt auctor. Quisque eget feugiat turpis. Integer iaculis mauris augue.
-            
-            Aenean felis lorem, ultricies sit amet leo vel, gravida imperdiet est. Sed vestibulum porta sem, vel egestas sapien molestie in. Aenean eget sapien in libero mattis vestibulum quis vel purus. Sed blandit volutpat nisl vitae vestibulum. Proin a varius nisl. Quisque pharetra justo lacinia, tempus urna a, commodo risus. Nullam interdum mi dolor, eu hendrerit augue gravida lobortis. Ut nec accumsan sapien, id faucibus ipsum. Mauris erat lacus, sagittis fringilla magna id, feugiat finibus dui.</p>
-    
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, arcu in consectetur pretium, massa urna ultrices purus, et feugiat felis massa at lacus. Nunc posuere lacus quis nulla egestas dignissim. Pellentesque fermentum diam nec turpis rutrum, et bibendum libero scelerisque. Suspendisse blandit lorem vitae diam porta, vel cursus velit pretium. Ut sed ornare ante. Cras a lorem ut ipsum cursus ultrices eget a massa. Pellentesque lacinia orci imperdiet semper vestibulum. Nunc condimentum feugiat venenatis. Nulla ante sapien, gravida eget dolor ac, ullamcorper ultrices ex. Vestibulum consectetur ac diam sit amet ornare. Nunc quis pharetra elit. Curabitur auctor tristique risus at interdum. Praesent non condimentum mauris. Nam consectetur iaculis facilisis. Donec dapibus egestas enim, quis congue lectus maximus vel. Proin mattis, erat efficitur lacinia pulvinar, mi velit tempor lorem, vitae mollis turpis velit eget ex.
-    
-                Duis tempor, massa vel aliquet maximus, purus magna finibus metus, vitae egestas dolor nisi eget elit. Etiam et blandit lectus. In id placerat sapien, id dignissim nisi. Integer pharetra aliquet ipsum, sed consectetur felis pharetra eu. Quisque ultricies ipsum justo, non pulvinar mauris facilisis et. Curabitur nulla diam, tincidunt nec lobortis sed, feugiat eget velit. Ut molestie orci quis laoreet suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum urna nibh. Sed sapien ex, pretium non ligula et, mattis sollicitudin enim. Fusce elementum, velit malesuada dapibus aliquet, ligula leo suscipit quam, eu aliquet justo lacus a nunc. Sed lacinia bibendum sapien eu aliquet. Praesent finibus diam in porttitor mattis. In vitae ornare odio. Aliquam vehicula dictum lectus eget rutrum. Sed enim leo, tempus a libero a, commodo venenatis nibh.
-                
-                Morbi vel risus et felis volutpat ultricies eu laoreet erat. Pellentesque rutrum at nibh in blandit. In vitae erat ac purus porta rhoncus eget sed mauris. Nunc convallis urna nec vestibulum pharetra. Pellentesque a velit tellus. Morbi faucibus lobortis tellus. Suspendisse potenti. Nunc auctor mattis magna nec sagittis. Quisque a lorem lacus. Morbi eget lectus hendrerit, molestie urna eu, lobortis nunc. Vestibulum ornare consequat purus id semper. Nam nec quam eu libero sagittis gravida.
-                
-                Praesent quis venenatis tellus. Nunc ornare scelerisque sem condimentum dapibus. In elementum, ante non facilisis varius, lorem diam posuere est, at ultricies metus sapien ut risus. Curabitur blandit at quam ac tempor. Pellentesque posuere sapien et nunc pretium pretium. Donec ultricies euismod blandit. Cras consectetur erat sit amet vestibulum hendrerit. Suspendisse potenti. Nullam quis lacus finibus, feugiat nulla rutrum, euismod est. Nam volutpat eu leo tincidunt auctor. Quisque eget feugiat turpis. Integer iaculis mauris augue.
-                
-                Aenean felis lorem, ultricies sit amet leo vel, gravida imperdiet est. Sed vestibulum porta sem, vel egestas sapien molestie in. Aenean eget sapien in libero mattis vestibulum quis vel purus. Sed blandit volutpat nisl vitae vestibulum. Proin a varius nisl. Quisque pharetra justo lacinia, tempus urna a, commodo risus. Nullam interdum mi dolor, eu hendrerit augue gravida lobortis. Ut nec accumsan sapien, id faucibus ipsum. Mauris erat lacus, sagittis fringilla magna id, feugiat finibus dui.</p>
+            <!-- Education Heading -->
+            <div class="row mw-100 ">
+                <div class="col-auto ">
+                    <h1 class="h1 ">Education</h1>
+                </div>                   
+            </div>
+
+            <!-- Content -->
+
+            <!-- Row -->
+            <div class="row mw-100 mb-4 mt-1">
+                <div class="col col-md-1 ">
+                    <i class="fa fa-graduation-cap" style="font-size:36px"></i>
+                    <div class="vl"></div>
+                </div>  
+                <!-- Unversity -->
+                <div class="col col-md-11 ">
+                    <h4 class="h4 lead">March 2017 - Present</h1>
+                    <h2 class="h2">BSc Electrical and Computer Engineering</h2>
+                    <h4 class="h4">Current Studying at the University of Cape Town</h4>
+                    <h4 class="h4 lead">Rondebosch, Cape Town, South Africa</h4>
+                </div>                
+            </div>
+
+            <!-- Row -->
+            <div class="row mw-100 mb-4 mt-1">
+                <div class="col col-md-1 ">
+                    <i class="fa fa-graduation-cap" style="font-size:36px"></i>
+                    <div class="vl"></div>
+                </div>  
+                <!-- Practrical Training Program -->
+                <div class="col col-md-11 ">
+                    <h4 class="h4 lead">15 Novermber 2018 - 28 November 2018</h1>
+                    <h2 class="h2">Practical Training Program</h2>
+                    <h4 class="h4">Cape Peninsula University of Technology</h4>
+                    <h4 class="h4 lead">Belville, Cape Town, South Africa</h4>
+                    <p>Undertook a 2 week intensive Practical Training Programme to complete some of the VAC work requirements for my engineering studies. 
+                        Some of the skills I learnt include:
+                        <ul>
+                            <li>welding</li>
+                            <li>turning</li>
+                            <li>pneumatic system design</li>
+                          </ul>
+                    </p>
+                </div>                
+            </div>
+
+             <!-- Row -->
+            <div class="row mw-100 ">
+                <div class="col col-md-1 ">
+                    <i class="fa fa-graduation-cap" style="font-size:36px"></i>
+                    <div class="vl"></div>
+                </div>  
+                <!-- Unversity -->
+                <div class="col col-md-11 ">
+                    <h4 class="h4 lead">January 2012 - November 2016</h1>
+                    <h2 class="h2">National Senior Certificate (NSC)</h2>
+                    <h4 class="h4">Attended high school Westerford High School</h4>
+                    <h4 class="h4 lead">Rondebosch, Cape Town, South Africa</h4>
+                    <p>Completed the National Senior Certificate qualification with seven distinctions and an 85% aggregate with subjects including, 
+                        but not limited to: 
+                        <ul>
+                            <li>Information Technology</li>
+                            <li>Physical Science</li>
+                            <li>Life Science</li>
+                            <li>Accounting</li>
+                          </ul>
+                    </p>
+                </div> 
+            </div>
+
+        </div>
+
         
 
     </div>
+</div>
+<!-- Project Section End -->
     
     
 

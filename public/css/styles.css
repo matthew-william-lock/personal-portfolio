@@ -27,7 +27,7 @@ h1,p {
     background-size: cover;
 }
 
-.jumbotron {
+.jumbotron-header {
     background-image: url('../imgs/zeits.jpg');
     background-size: cover;
     /* background-size: 100% 100%; */
@@ -83,7 +83,7 @@ h1,p {
       font-size: 15px !important;
     }
 
-    .jumbotron {
+    .jumbotron-header{
         position: relative;
     }
 
@@ -232,7 +232,7 @@ h1,p {
   margin-bottom: 20px;
 }
 
-.card:hover {
+.card-hover:hover {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
   -moz-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
   box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.3);
@@ -252,7 +252,7 @@ h1,p {
   /*** Projects page =================================== ***/
 
   .projects-container{
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
     position: relative;
   }
@@ -264,4 +264,21 @@ h1,p {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
   }
+
+  .stretched{
+    margin-left: -10px;
+  }
+
+    /*** CV =================================== ***/
+
+    .vl {
+      border-left: 3px solid #292b2c;
+      height: 88%;
+      position: absolute;
+      /* left: 40%; */
+      margin-left: 21px;
+      margin-top: 40px;
+      top: 0;
+    }
