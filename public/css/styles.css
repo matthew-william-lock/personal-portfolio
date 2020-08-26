@@ -1,0 +1,245 @@
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+    min-width: 100%; 
+    max-width: 100%;
+    position: relative;
+    background-color: #e7e7e1;
+}
+
+h1,p {
+    margin: 5px;
+    text-align: justify;
+}
+.row {
+    padding: 2px;
+    padding-right: 20px;
+}
+
+/*** Banner =================================== ***/
+
+#banner{
+    background-image: url('../imgs/zeits.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url('../imgs/zeits.jpg');
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-position: top right; 
+    height: 70vh;
+}
+
+.display-4 {
+    font-size: 2vw;
+    color:white;
+    padding: 5px;
+}
+
+.btn{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.btn-outline-warning{
+    border-color:  #f0f2ac;
+    color: #f0f2ac;;
+}
+
+.btn-outline-warning:hover{
+    border-color:  #f0f2ac;
+    background-color: #f0f2ac;
+}
+
+.btn-warning{
+    background-color: #f0f2ac;
+    border-color:  #f0f2ac;
+    border-radius: 5px;
+}
+
+.btn-warning:hover{
+    background-color: #c5c78b;
+    border-color:  #c5c78b;
+}
+
+.icon.trophy{
+  position: relative;
+  top: -2.5px;
+}
+
+.icon.contact{
+  position: relative;
+  top: -1.5px;
+}
+
+/* Medium size screen */
+@media (max-width: 768px){
+    #banner p{
+      font-size: 15px !important;
+    }
+
+    .jumbotron {
+        position: relative;
+    }
+
+    .banner-content{
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
+  } 
+
+/*** Text Rotator =================================== ***/
+
+.main-text-container {
+    height: 100%;
+    width: 100%;
+    display: table;
+    max-width: 550px;
+  }
+
+.main-text-container {
+    height: 100%;
+    width: 100%;
+    display: table;
+    /* margin-left: 50vw; */
+    max-width: 550px;
+  }
+  
+  .main-text {
+
+    position: relative;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .main-text h1 {
+    font-size: 5vw;
+    line-height: 100%;
+    font-weight: 200;
+    margin: 19px 0 19px;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .main-text h1 span.changing-text {
+    color: #f0f2ac;
+  }
+  
+  .ah-headline.clip span {
+    padding: 0;
+  }
+  
+  .ah-headline.clip span b {
+    font-weight: 600;
+  }
+  
+  .ah-headline.clip .ah-words-wrapper::after {
+    display: none;
+  }
+  
+  .call-to-actions-home a:first-child {
+    margin-right: 25px;
+  }
+
+  /*** Page content =================================== ***/
+
+  .primary-color {
+    color:#f0f2ac;
+  }
+
+  .primary-color-background {
+    background-color:#f0f2ac;
+  }
+
+  .white-color {
+    color:white;
+  }
+
+  .background-white{
+    background-color: white;
+  }
+
+  .shadow-dark {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
+    box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.3);
+  }
+
+  .blunt-corners{
+    border-radius: 25px;
+  }
+
+  .sharp-corners {
+    border-radius: 25px;
+  }
+
+  /* Small screen */
+  @media (max-width: 576px){
+    .container {
+      margin-left: 10px;
+    }
+  } 
+
+  .speech-bubble-md {
+    position: relative;
+  }
+  
+  .speech-bubble-md:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-right-color: white;
+    border-left: 0;
+    margin-top: -11px;
+    margin-left: -11px;
+  }
+
+  /* Adujust bubble for md screensizes */
+  @media (max-width: 768px){  
+    .speech-bubble-md {
+      position: relative;
+      margin-top: 30px;
+    }
+    
+    .speech-bubble-md:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 11px solid transparent;
+      border-bottom-color:white;
+      border-top: 0;
+      margin-left: -11px;
+      margin-top: -11px;
+    }
+  } 
+
+  .card:hover {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.1);
+    box-shadow: 0px 5px 20px 0px rgba(69,67,96,0.3);
+    background-color: #f0f2ac;
+  }
+
+  .card, .card-header, .card-body, .card-footer{
+    border-radius:15px !important;
+}
+
+.card-img-top{
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
