@@ -18,7 +18,7 @@
     <title>Matthew Lock - Personal Portfolio</title>
 
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="70">
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- Navbar Starts-->
     <nav class="navbar navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="navbar">
@@ -30,7 +30,7 @@
             <div class="navbar-nav">
               <a class="nav-item nav-link scrollSmooth scroll active" href="#banner">Home</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#about">About</a>
-              <a class="nav-item nav-link scrollSmooth scroll" href="#section1">Projects</a>
+              <a class="nav-item nav-link scrollSmooth scroll" href="#projects">Projects</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#section1">Curriculum Vitae</a>
               <a class="nav-item nav-link scrollSmooth scroll" href="#section2">Contact Me</a>
             </div>
@@ -145,7 +145,7 @@
                     and <a href="https://www.instagram.com/p/B1TJPL4Hu8J/">Playing with Solar </a> projects, and have been involved in the development of
                     <a href="https://play.google.com/store/apps/details?id=com.pixilate&hl=en_us ">Pixilate</a>, an application focused on using Computer Vision to provide 
                     translations from English textbooks to African languages. I am currently involved with the development of an application which aims to strenghen the second hand
-                    clothing communities present of social media platforms such as Instragram <i class="fa fa-instagram"></i>
+                    clothing communities present on social media platforms such as Instragram <i class="fa fa-instagram"></i>
                     </p>
 
                 </div> 
@@ -206,6 +206,17 @@
                     </div>
                 </div>
 
+                <!-- Bouldering -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid " src="imgs/gate-opener.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="stretched-link text-dark">Electronics</a></h3>      
+                            <p class="text-muted">lorum ipsum</p>                      
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             
@@ -216,34 +227,42 @@
     <!-- About Section End -->
 
     <!-- Project Section Start -->
-    <div id="about" class="container section">
+    <div class="container-fluid bg-dark projects-container shadow-dark">
 
-        <!-- Header -->
-        <div class="row mw-100 justify-content-center justify-content-md-start ">
-            <div class="col-auto bg-dark shadow-dark">
-                <h1 class="h1 primary-color">My Projects</h1>
-            </div>                   
+        <!-- background video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="vids/river.mp4" type="video/mp4">
+          </video>
+
+        <div id="projects" class="container section pt-3">
+
+            <!-- Header -->
+            <div class="row mw-100 justify-content-center justify-content-md-start ">
+                <div class="col-auto bg-dark shadow-dark">
+                    <h1 class="h1 primary-color">My Projects</h1>
+                </div>                   
+            </div>
+    
+            <!-- content -->
+            <div class="row mw-100 mt-3 align-items-center justify-content-center pt-3 pb-4" > 
+    
+                <!-- justify-content-center -->
+                <div class="col-12 col-lg-3 col-md-5 d-flex justify-content-center justify-content-md-start">
+                    <img src="imgs/relaxing-small.jpg" class="rounded-circle shadow-dark" alt="Cinque Terre" width="200" height="200"> 
+                </div>
+    
+                <div class="col-12 col-lg-9 col-md-7">
+                    <div class="speech-bubble-md background-white shadow-dark sharp-corners p-3 justify-content-center "> 
+                        <p>My name is <b>Matthew Lock</b> and I am a final year Electrical and Computer Engineering <b>student</b> from Cape Town.</p>      
+                        <p>Being a curious kid I loved exploring the mysteries of Ancient Egypt and learning all I could about those burning balls of gas in the sky. 
+                            Curioisity drove my passion for building things with my hands and using python programming to solve simple challenges.
+                            This ultimately lead me down my path to <b>Engineering</b> of which I am currently in hot pursuit 🔥 </p>  
+                    </div> 
+                </div>
+    
+            </div>           
+    
         </div>
-
-        <!-- content -->
-        <div class="row mw-100 mt-3 align-items-center justify-content-center pt-3 pb-4" > 
-
-            <!-- justify-content-center -->
-            <div class="col-12 col-lg-3 col-md-5 d-flex justify-content-center justify-content-md-start">
-                <img src="imgs/relaxing-small.jpg" class="rounded-circle shadow-dark" alt="Cinque Terre" width="200" height="200"> 
-            </div>
-
-            <div class="col-12 col-lg-9 col-md-7">
-                <div class="speech-bubble-md background-white shadow-dark sharp-corners p-3 justify-content-center "> 
-                    <p>My name is <b>Matthew Lock</b> and I am a final year Electrical and Computer Engineering <b>student</b> from Cape Town.</p>      
-                    <p>Being a curious kid I loved exploring the mysteries of Ancient Egypt and learning all I could about those burning balls of gas in the sky. 
-                        Curioisity drove my passion for building things with my hands and using python programming to solve simple challenges.
-                        This ultimately lead me down my path to <b>Engineering</b> of which I am currently in hot pursuit 🔥 </p>  
-                </div> 
-            </div>
-
-        </div>           
-
     </div>
     <!-- Project Section End -->
 
