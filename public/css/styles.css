@@ -334,5 +334,17 @@ h1,p {
 }
 
 .contact-me-body {
-  max-width: 85%;
+  max-width: 100%;
+}
+
+.justify-text{
+  text-align: justify;
+}
+
+.error::-webkit-input-placeholder {
+  color: red
+}
+
+.sent::-webkit-input-placeholder {
+  color: green
 }
