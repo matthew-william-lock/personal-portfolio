@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require('path')
 const e = require('express')
+const fs = require('fs')
 const {sendEmail} = require("./emails/message")
 
 // Define paths
@@ -44,6 +45,14 @@ app.post('/message',(req,res)=>{
     }
 
 
+})
+
+app.get('/designreport',(req,res)=>{
+    const file= path.join(__dirname,'../public/pdfs/report.pdf')
+    console.log(file)
+    var data =fs.readFileSync(file);
+    res.contentType("application/pdf");
+    res.send(data);
 })
 
 // Start server
