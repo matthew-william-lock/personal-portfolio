@@ -45,6 +45,7 @@ h1,p {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: help;
 }
 
 .display-4 {

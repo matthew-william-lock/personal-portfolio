@@ -55,6 +55,14 @@ app.get('/designreport',(req,res)=>{
     res.send(data);
 })
 
+app.get('/cv',(req,res)=>{
+    const file= path.join(__dirname,'../public/pdfs/cv.pdf')
+    console.log(file)
+    var data =fs.readFileSync(file);
+    res.contentType("application/pdf");
+    res.send(data);
+})
+
 // Start server
 app.listen(port,()=>{
     console.log('Server is up on port '+port)
