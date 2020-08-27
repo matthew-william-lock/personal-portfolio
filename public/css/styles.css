@@ -273,12 +273,66 @@ h1,p {
 
     /*** CV =================================== ***/
 
-    .vl {
-      border-left: 3px solid #292b2c;
-      height: 88%;
-      position: absolute;
-      /* left: 40%; */
-      margin-left: 21px;
-      margin-top: 40px;
-      top: 0;
-    }
+.vl {
+  border-left: 3px solid #292b2c;
+  height: 90%;
+  position: absolute;
+  /* left: 40%; */
+  margin-left: 21px;
+  margin-top: 40px;
+  top: 0;
+}
+
+.fa-suitcase{
+  margin-left: 5.5px;
+}
+
+.hr-cv {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.fa-star,.fa-trophy{
+  padding-bottom: 5px;
+}
+
+.gold {
+  color: #FFD700;
+}
+
+.icon-shadow {
+  text-shadow: 0 0 3px #000;
+}
+
+
+/*** contact me =================================== ***/
+
+.contact-me::after {
+  content: "";
+  background-image: url("../imgs/friends.jpg");
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.contact-me{
+  padding-bottom: 100px;
+}
+
+.form-control:focus {
+  border-color: #f0f2ac;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(240, 242, 172, 0.6);
+}
+
+.text-shadow {
+  text-shadow: 0 0 1px #000;
+}
+
+.contact-me-body {
+  max-width: 85%;
+}
