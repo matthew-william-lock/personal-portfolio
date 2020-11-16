@@ -1,0 +1,161 @@
+    {{!-- <div class="container-fluid">
+        <div class="row-fluid bg-dark">
+            <p>test</p>
+        </div>
+    </div> --}}
+    
+<div class="container-fluid projects-container shadow-dark ">
+
+    <!-- background video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="vids/river.mp4" type="video/mp4">
+    </video>
+
+    <div id="projects" class="container section pt-3">
+        <!-- Header -->
+        <div class="container-fluid projects-container">
+            <div class="row mw-100 justify-content-center justify-content-md-start pt-3">
+                <div class="col-auto bg-dark shadow-dark">
+                    <h1 class="h1 primary-color">My Projects</h1>
+                </div>                   
+            </div> 
+        </div>
+    </div>
+
+    <div id="projects" class="container-fluid section pt-3">
+
+            <!-- Cards -->
+        {{!-- <div class="card-deck"> --}}
+        <div class="card-columns">
+
+            <!-- Realtime Chat Room -->
+            <div class="card mt-4">
+                <h5 class="card-header">Realtime Chat Room</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto">
+                        <img src="imgs/projects/chatroom.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2">Real-time chat room application built using socket.io protocols. Allows users to join different chat rooms while tracking current users in each room. Users are able to share their current location should they wish to get to know one another better.</p>
+                        <a href="https://hexdro-chat-room.herokuapp.com/" class="btn btn-primary"> 
+                        <i class="fa fa-phone pr-2" aria-hidden="true" style="font-size:15px;"></i>
+                        Chat Room</a>
+                        <a href="https://github.com/matthew-william-lock/Real-Time-Chat-Room" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                        <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div>        
+
+            <!-- 2D Sonar Imaging System -->
+            <div class="card mt-2">
+                <h5 class="card-header">2D Sonar Imaging System</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto pl-2">
+                        <img src="imgs/projects/sonar.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2">Two dimensional sonar operating at 40 kHz in air using the Teensy 3.6 micro-controller and three sonar transceivers.
+                        Works by emmiting a chirp signal, recording echoes off of the surrounding environment, then applying various signal processing techniques to determine the distance and location of nearby objects. </p>
+                        <a href="/designreport" class="btn btn-success">  
+                            <i class="fa fa-book pr-2" aria-hidden="true" style="font-size:15px;"></i>
+                        View Report</a>
+                        <a href="https://github.com/Lawrence-Godfrey/Sonar-Design" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                            <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Unsupervised Image Clusterer -->
+            <div class="card mt-2">
+                <h5 class="card-header">Unsupervised Image Clusterer</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto p-2">
+                        <img src="imgs/projects/number.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2">Efficient implementation of K-Means clustering to group any number of PPM images provided by the user. The application is primarily focused on grouping together images of digits and is realised through the c++ programming language and standard practises.</p>
+                        <a href="https://github.com/matthew-william-lock/Unsuperised-Image-Clustering" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                            <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Mask Accelerator -->
+            <div class="card mt-2">
+                <h5 class="card-header">Image Mask Accelerator</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto p-2">
+                        <img src="imgs/projects/ima.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2">Implementation of an FPGA based image masking accelerator using the Nexys A7 100T. The main goal of this implementation is to exploit the parallel nature of masking operations and FPGA parallelism in order to produce an efficient image masker. Included in this solution is VGA interface which enables processed images to be displayed.</p>
+                        <a href="/imareport" class="btn btn-success">  
+                            <i class="fa fa-book pr-2" aria-hidden="true" style="font-size:15px;"></i>
+                        View Report</a>                        
+                        <a href="https://github.com/matthew-william-lock/Image-Masking-Accelerator" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                            <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High Accuracy FPGA Clock -->
+            <div class="card mt-2">
+                <h5 class="card-header">High Accuracy FPGA Clock</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto p-2">
+                        <img src="imgs/projects/fpga_clock.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2">Implementation of a high accuracy clock using the Nexys A7 100T FPGA. Included in this implementation is an adjustable PWM setting used to vary the brightness of the seven segment displays.</p>
+                        <a href="https://www.youtube.com/watch?v=FhooJ4PG5KM&list=PLIYLdk57DI7A1hTAwtIqUQzsAEMUl7pr1&index=1" class="btn btn-danger align-middle-verticle">  
+                            <i class="fa fa-youtube-play pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Youtube</a>                        
+                        <a href="https://github.com/matthew-william-lock/FPGA-WallClock" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                            <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speech Music Discriminator -->
+            <div class="card mt-2">
+                <h5 class="card-header">Speech Music Discriminator</h5>
+                <div class="row no-gutters">
+                    <div class="col-md-4 bg-white my-auto p-2">
+                        <img src="imgs/projects/music_speech.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text lh-shrunk pb-2"> Identification of important audio features which can be used to distinguish input audio signals as containing either speech or music using ANN and KNN classifiers. 
+                            The accuracy and efficiency of each model is evaluated and compared to determine the appropriate use cases for each model.</p>
+                        <a href="/musicspeechreport" class="btn btn-success">  
+                            <i class="fa fa-book pr-2" aria-hidden="true" style="font-size:15px;"></i>
+                        View Report</a>                       
+                        <a href="https://github.com/matthew-william-lock/Classification-of-Music-and-Speach" style="font-size:15px;" class="btn btn-dark my-auto align-middle-verticle"> 
+                            <i class="fa fa-github pr-2 align-middle-verticle" aria-hidden="true" style="font-size:25px;"></i>
+                        Source</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+</div>
