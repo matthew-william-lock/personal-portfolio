@@ -55,7 +55,7 @@ h1,p {
 }
 
 .btn{
-    margin-top: 2px;
+    /* margin-top: 2px; */
     margin-right: 10px;
 }
 
@@ -272,17 +272,36 @@ h1,p {
   }
 
   #myVideo {
-    min-width: 100%;
+  min-width: 100%;
   min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
+  object-fit: fill;
   }
 
   .stretched{
     margin-left: -10px;
+  }
+
+  .card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+
+  .lh-shrunk{
+    line-height:1.2;
+  }
+
+  .align-middle-verticle{
+    /* align-items: initial; */
+    vertical-align: middle;
   }
 
     /*** CV =================================== ***/
