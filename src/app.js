@@ -87,6 +87,14 @@ app.get('/musicspeechreport',(req,res)=>{
     res.send(data);
 })
 
+app.get('/lte-emulator',(req,res)=>{
+    const file= path.join(__dirname,'../public/pdfs/EEE4022S_2020_FINAL_REPORT_LCKMAT002_LOCK_MWL_MWANGAMA.pdf')
+    console.log(file)
+    var data =fs.readFileSync(file);
+    res.contentType("application/pdf");
+    res.send(data);
+})
+
 
 
 app.get('/cv',(req,res)=>{
