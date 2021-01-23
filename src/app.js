@@ -95,6 +95,14 @@ app.get('/lte-emulator',(req,res)=>{
     res.send(data);
 })
 
+app.get('/environment-logger',(req,res)=>{
+    const file= path.join(__dirname,'../public/pdfs/EEE3096S_ Embedded Systems II_Project_Report.pdf')
+    console.log(file)
+    var data =fs.readFileSync(file);
+    res.contentType("application/pdf");
+    res.send(data);
+})
+
 
 
 app.get('/cv',(req,res)=>{
