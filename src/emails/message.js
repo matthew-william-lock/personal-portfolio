@@ -9,7 +9,7 @@ sgMail.setApiKey(apiKey)
 const sendEmail = (name,email, subject, message) =>{
     sgMail.send({
         to:'matthewwilliamlock@gmail.com',
-        from:'mtthew.lock@gmail.com',
+        from:'matthewwilliamlock@gmail.com',
         subject:subject,
         text:message+"\nThis email has by "+name+" at "+email
         // html:"html here"
