@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/textanimation.css">
 
+    <!-- Particle JS -->
+    <link rel="stylesheet" href="./css/particles.css">
+    {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
+  
+
     <!-- Site information -->
     <title>Matthew Lock</title>
     <link rel="icon" href="./imgs/portfolio.png">
@@ -67,6 +72,16 @@
     <script src="js/form.js"></script>
     <!-- Main JS Initialization File -->
     <script src="js/custom.js"></script>
+
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load('particles-js', 'json/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
     
   </body>
 </html>
