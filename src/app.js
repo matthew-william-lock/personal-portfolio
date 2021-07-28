@@ -33,6 +33,16 @@ app.get('',(req,res)=>{
     })
 })
 
+app.get('/updates',(req,res)=>{
+    res.render('updates',{
+    })
+})
+
+app.get('/updates/100',(req,res)=>{
+    res.render('versions/100',{
+    })
+})
+
 app.post('/message',(req,res)=>{ 
 
     const name = req.query.name

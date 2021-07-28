@@ -26,7 +26,7 @@
   
 
     <!-- Site information -->
-    <title>Matthew Lock</title>
+    <title>Updates</title>
     <link rel="icon" href="./imgs/portfolio.png">
     <meta name="description" content="Personal portfolio for Matthew Lock.">
     <meta name="keywords" content="Matthew Lock, South Africa, Portfolio, CV, Website">
@@ -35,32 +35,75 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- Navbar Starts-->
-    {{>navbar}}
-    <!-- Navbar Ends -->
+    <div style="height: 100%;">
+        {{!-- <div id="particles-js"></div> --}}
 
-    <!-- Personal Banner Starts -->
-    {{>banner}}
-    <!-- Personal Banner Ends -->
+        {{>updates_navbar}}
+        <!-- Navbar Ends -->
 
-    <!-- About Section Start -->
-    {{>about}}
-    <!-- About Section End -->
+        <!-- Updates-->
+        <div class="container p-4 text-light mb-4" style="margin-top: 100px;background-color: rgba(52, 58, 64, 0.95);">
+            
+            <!-- July 28, 2021 -->
+            <h3>Release Notes for July 28, 2021</h1>
+            <p class="lead">v1.0.1 - Update to about section and minor improvements </p>
+            <br>
+            <p>[About] 
+                <ul class="dashed">
+                    <li>Updated about me information</li>
+                    <li>Removed circular profile picture with speach bubble</li>
+                    <li>Added new picture of myself</li>
+                    <li>Added <a href="https://github.com/VincentGarreau/particles.js/">particles.js</a> for background</li>
+                    <li>Added current location and socials</li>
+                </ul>
+            </p>
+            <br>
+            <p>[Footer] 
+                <ul class="dashed">
+                    <li>Added back to top buttom</li>
+                    <li>Added link to website updates</li>
+                </ul>
+            </p>
+            <br>
+            <a href="/" target="_blank">View this version</a>
 
-    <!-- Project Section Start -->
-    {{>projects}}
-    <!-- Project Section End -->
+        </div>
 
-    <!-- CV Section Start -->
-    {{>cv}}
-    <!-- CV Section End -->
-
-    <!-- Contact me Start -->
-    {{>contact_me}}
-    <!-- Contact me End -->
-
-    <!-- Footer-->
-    {{>footer}}
-    <!-- Footer End -->
+        <div class="container p-4 text-light mb-4" style="background-color: rgba(52, 58, 64, 0.95);">
+            <!-- First Release -->
+            <h3>Release Notes for Original Release</h1>
+            <p class="lead">v1.0.0 - First Major Release </p>
+            <br>
+            <p>[About] 
+                <ul class="dashed">
+                    <li>Implemented Section</li>
+                </ul>
+            </p>
+            <br>
+            <p>[Projects] 
+                <ul class="dashed">
+                    <li>Implemented Section</li>
+                </ul>
+            </p>
+            <br>
+            <p>[CV] 
+                <ul class="dashed">
+                    <li>Implemented Section</li>
+                </ul>
+            </p>
+            <br>
+            <p>[Contact Me] 
+                <ul class="dashed">
+                    <li>Implemented Section</li>
+                </ul>
+            </p>
+            <br>
+            <a href="/updates/100" target="_blank">View this version</a>
+        </div>
+    
+    </div>
+    
+    
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
