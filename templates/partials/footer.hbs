@@ -1,0 +1,34 @@
+<div class="container-fluid shadow-dark bg-dark">
+    <div class="row p-2 text-light">
+
+        <!-- Empty Space Left -->
+        <div class="col-sm-4"></div>
+
+        <!-- Back to top -->
+        <div class="col-sm-4">
+            <div id="scrollToTopBtn" style="cursor: pointer;">
+                <h4 class="mb-0" style="text-align: center;">BACK TO TOP <i class="fa fa-angle-up circle-icon" style="font-size:24px"></i></h1>
+            </div>
+        </div>
+        <!-- Website Versions -->
+        <div class="col-sm-4">
+            <p class="lead" style="text-align: right;">
+            <a href="/updates" style="color: inherit;">Website Updates</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var rootElement = document.documentElement;
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+</script>
